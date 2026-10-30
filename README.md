@@ -7,4 +7,10 @@ and learn the real commands as you go. Source: https://github.com/Anand-Shekhawa
 brew install anand-shekhawat/tap/noob
 ```
 
-To update later: `brew upgrade noob`
+Noob's own window (the app):
+
+```bash
+brew install --cask anand-shekhawat/tap/noob-app
+```
+
+To update later: `brew upgrade noob` (and `brew upgrade --cask noob-app`)
