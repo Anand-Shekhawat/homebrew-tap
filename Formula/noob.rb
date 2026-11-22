@@ -1,23 +1,23 @@
 class Noob < Formula
   desc "Beginner-friendly command line: type plain English, learn the real commands"
   homepage "https://github.com/Anand-Shekhawat/noob-cli"
-  version "0.4.0"
+  version "1.0.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Anand-Shekhawat/noob-cli/releases/download/v0.4.0/noob-v0.4.0-aarch64-apple-darwin.tar.gz"
-      sha256 "5ec56c62f91dd2d7c24a4f1629a7ed26bd5d809b84531539bb5bcd6df4705f30"
+      url "https://github.com/Anand-Shekhawat/noob-cli/releases/download/v1.0.0/noob-v1.0.0-aarch64-apple-darwin.tar.gz"
+      sha256 "b9917f444bcab5e9c1228fb9733d45b3ab77201e1e5231f4d4476002e117d53d"
     end
     on_intel do
-      url "https://github.com/Anand-Shekhawat/noob-cli/releases/download/v0.4.0/noob-v0.4.0-x86_64-apple-darwin.tar.gz"
-      sha256 "acc109fffb5ed90f7d719c50df930b1e92202fba389a26a85af3913ba2addf6a"
+      url "https://github.com/Anand-Shekhawat/noob-cli/releases/download/v1.0.0/noob-v1.0.0-x86_64-apple-darwin.tar.gz"
+      sha256 "10d764feb63e57c5538273029d388f44d1b72c89d943a70dfd5a289009364b57"
     end
   end
 
   on_linux do
-    url "https://github.com/Anand-Shekhawat/noob-cli/releases/download/v0.4.0/noob-v0.4.0-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "1d1995bdfa7487224d0e76ad72239ff66a21536242a50792b687924496dc474a"
+    url "https://github.com/Anand-Shekhawat/noob-cli/releases/download/v1.0.0/noob-v1.0.0-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "3448dab3862c5fe614f8bf9f8926b6aa8b6b8133c34f7794af0877898406c6ab"
   end
 
   def install
@@ -25,6 +25,6 @@ class Noob < Formula
   end
 
   test do
-    assert_match "Noob 0.4.0", shell_output("#{bin}/noob version")
+    assert_match "Noob 1.0.0", shell_output("#{bin}/noob version")
   end
 end
