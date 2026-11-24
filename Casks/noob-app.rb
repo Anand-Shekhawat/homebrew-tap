@@ -1,9 +1,9 @@
 cask "noob-app" do
   arch arm: "aarch64", intel: "x86_64"
 
-  version "1.0.0"
-  sha256 arm:   "43ee1f5884be398638df36c2381a33bb0c8cb5e2e973053f9f2d4e9bbb1bfff9",
-         intel: "316a9dba597bc1a3f52c3e7a6813126f70d418bba77acc42a840b8a114d8c301"
+  version "1.0.1"
+  sha256 arm:   "bb285c8d176fc0af6748d4f61506ab85e41fe2310d3eec839d761e6ad2139cd5",
+         intel: "d652ab1f510a66a0bb8f608b2e5265c45a7604743951d4b8a589b5c135a8fd37"
 
   url "https://github.com/Anand-Shekhawat/noob-cli/releases/download/v#{version}/Noob-v#{version}-#{arch}-apple-darwin.zip"
   name "Noob"
